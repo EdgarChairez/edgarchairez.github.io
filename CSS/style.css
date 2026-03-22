@@ -15,7 +15,7 @@ body, .main {
 }
 
 /* Ajuste para pantallas extra pequeñas (menos de 400px) */
-@media (max-width: 399px) {
+@media (max-width: 767px) {
     /* 1. Eliminamos la imagen por completo del flujo */
     .imagenPrincipal {
         display: none !important;
