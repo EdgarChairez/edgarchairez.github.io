@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Edgar Chairez</title>
 </head>
+
 <body class="main">
     <div class="headline">
         <div class="datos">
@@ -15,6 +18,8 @@
             <div class="secciones">
                 <button class="glow-on-hover" type="button" onclick="irASeccion('sobreMi')">Saber más</button>
                 <button class="glow-on-hover" type="button" onclick="irASeccion('contacto')">Contactame</button>
+                <button class="glow-on-hover" type="button" onclick="irASeccion('proyectos')">Proyectos</button>
+                <button class="glow-on-hover" type="button" onclick="irASeccion('habilidades')">Habilidades</button>
             </div>
         </div>
         <div class="imagenPrincipal"></div>
@@ -23,31 +28,72 @@
     <div id="sobreMi">
         <h1 class="fade-in-section">Sobre mí</h1>
         <p class="descripcion-personal fade-in-section">
-            <strong>Ingeniero en Sistemas Computacionales</strong> & <strong>Tester QA</strong> especializado en la validación técnica post-mitigación de vulnerabilidades en APIs & Entornos Web. Experto en el diseño de pruebas exploratorias & responsable del visto bueno (VoBo) formal, así como de la gestión de documentación crítica de calidad, asegurando el cumplimiento normativo & la excelencia técnica del software."
+            <strong> QA Engineer Senior</strong> e <strong>Ingeniero en Sistemas Computacionales</strong> con más de 4
+            años de experiencia asegurando la calidad
+            de software de alta transaccionalidad (Web, Móvil, APIs y Backend). Especialista en el ciclo completo de
+            pruebas (STLC)
+            bajo metodologías ágiles (Scrum), pruebas Gray-Box/Black-Box y diseño de frameworks de automatización E2E
+            con Python
+            y Selenium. Pionero en la adopción de Inteligencia Artificial Generativa (AI-Driven Testing) para elevar la
+            eficiencia en el
+            diseño de matrices de prueba y auditorías de cobertura arquitectónica.
         </p>
         <!---->
         <div class="card mb-3 fade-in-section mx-auto">
             <div class="row g-0">
                 <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
                     <a href="https://www.nttdata.com" target="_blank" rel="noopener noreferrer">
-                        <img src="img/ntt.jpg" class="img-fluid rounded-start imagenEmpresa ntt transition" alt="NTT Data">
+                        <img src="img/ntt.jpg" class="img-fluid rounded-start imagenEmpresa ntt transition"
+                            alt="NTT Data">
                     </a>
                 </div>
                 <div class="col-12 col-md-9">
                     <div class="card-body">
                         <h5 class="card-title">NTT | Testing Engineering Senior Associate</h5>
-                        <p class="card-text"><small class="text-body-secondary">Mayo 2025 - Actual</small></p>
-                        <p class="card-text">
-                            <strong>QA Exploratorio Estratégico:</strong> Diseño y ejecución de pruebas en entornos con documentación limitada, utilizando pensamiento crítico para identificar vulnerabilidades funcionales.
-                            <br>
-                            <strong>Gestión de Calidad Integral:</strong> Responsable del ciclo completo de pruebas, desde la captura de evidencia técnica hasta la validación del cierre de calidad del software.
+                        <p class="card-text"><small class="text-body-secondary">Mayo 2025 - Agosto 2026</small></p>
+                        <p class="card-text mb-2">
+                            <strong>Innovación con IA (AI-Driven Testing):</strong> Co-lideré la adopción de
+                            herramientas de IA Generativa para la auditoría y validación de escenarios complejos,
+                            garantizando la cobertura integral de requerimientos arquitectónicos y reduciendo el tiempo
+                            de diseño.
+                        </p>
+                        <p class="mb-3">
+                            <strong>Prompt Engineering Técnico:</strong> Estructuré contextos avanzados e historias de
+                            usuario en modelos de IA para la generación precisa de matrices de prueba, mitigando la
+                            creación de casos redundantes y optimizando la eficiencia del STLC.
+                        </p>
+                        <p class="mb-3">
+                            <strong>Gestión Operativa de Calidad:</strong> Clasifiqué y ejecuté estrategias de prueba
+                            para Folios de Problema (incidentes críticos), mejoras funcionales y remediaciones de
+                            sistemas, asegurando la continuidad operativa del negocio sin afectaciones a producción.
+                        </p>
+                        <p class="mb-3">
+                            <strong>Backend & Database Testing:</strong> Audité y configuré entornos de datos ejecutando
+                            consultas complejas en SQL (Joins, Subqueries) directamente en bases de datos para validar
+                            retornos y lógica de negocio.
+                        </p>
+                        <p class="mb-3">
+                            <strong>Pruebas Multicomponente & Reporte Eficiente: </strong>Diseñé y ejecuté pruebas
+                            exploratorias en apps Web, Móviles y APIs; reduje el tiempo de diagnóstico de desarrollo
+                            implementando reportes en video con Loom.
                         </p>
                         <div class="pildoras-container">
-                            <span class="pildora php">PHP</span>
-                            <span class="pildora postman">POSTMAN</span>
-                            <span class="pildora jira">JIRA</span>
-                            <span class="pildora sql">SQL</span>
-                            <span class="pildora mysql">MySQL</span>
+                            <span class="pildora" title="Validación de escenarios complejos con IA Generativa">AI-Driven
+                                Testing</span>
+                            <span class="pildora" title="Diseño de contextos e historias para matrices de prueba">Prompt
+                                Engineering</span>
+                            <span class="pildora" title="Pruebas y validación de APIs multicomponente">Prompt
+                                Engineering</span>
+                            <span class="pildora"
+                                title="Clasificación y gestión de Folios de Problema e incidentes">Jira</span>
+                            <span class="pildora"
+                                title="Control documental y especificación de requerimientos">Confluence</span>
+                            <span class="pildora"
+                                title="Consultas complejas (Joins, Subqueries) para backend">SQL</span>
+                            <span class="pildora"
+                                title="Reportes en video para reducir tiempo de diagnóstico">Loom</span>
+                            <span class="pildora" title="Creación de scripts y automatización de pruebas">Python</span>
+                            <span class="pildora" title="Ejecución de estrategias QA bajo metodología ágil">Scrum</span>
                         </div>
                     </div>
                 </div>
@@ -58,23 +104,46 @@
             <div class="row g-0">
                 <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
                     <a href="https://www.coppel.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/coppel.avif" class="img-fluid rounded-start imagenEmpresa coppel transition" alt="Coppel">
+                        <img src="img/coppel.avif" class="img-fluid rounded-start imagenEmpresa coppel transition"
+                            alt="Coppel">
                     </a>
                 </div>
                 <div class="col-12 col-md-9">
                     <div class="card-body">
                         <h5 class="card-title">COPPEL | Tester</h5>
                         <p class="card-text"><small class="text-body-secondary">Agosto 2023 - Mayo 2025</small></p>
-                        <p class="card-text">
-                            <strong>QA & Software Testing:</strong> Planificación y ejecución de ciclos de prueba completos, desde el reporte de incidencias hasta la verificación de soluciones.
-                            <br>
-                            <strong>Aseguramiento de Calidad:</strong> Implementación de flujos de trabajo para la identificación y solución de errores, optimizando la fiabilidad del sistema.
+                        <p class="card-text mb-2">
+                            <strong>Análisis de Pruebas Unitarias (Gray-Box):</strong> Evalué pruebas unitarias de
+                            desarrollo para mapear flujos lógicos y asegurar la cobertura de escenarios críticos en
+                            sistemas de alta transaccionalidad.
+                        </p>
+                        <p class="mb-3">
+                            <strong>Pruebas Exploratorias E2E:</strong> Diseñé y ejecuté pruebas de punta a punta en
+                            componentes web y aplicativos móviles en ambientes Staging/Dev, garantizando la estabilidad
+                            previa al despliegue.
+                        </p>
+                        <p class="mb-3">
+                            <strong>Backend & Aprovisionamiento de Datos:</strong> Gestioné la preparación de ambientes
+                            mediante consultas directas a base de datos, auditando funciones y asegurando los retornos
+                            esperados.
+                        </p>
+                        <p class="mb-3">
+                            <strong>Gobierno QA en Scrum:</strong> Gestioné el ciclo de vida de defectos vía Jira y
+                            mantuve el control documental del STLC en entornos colaborativos.
                         </p>
                         <div class="pildoras-container">
-                            <span class="pildora php">PHP</span>
-                            <span class="pildora sql">SQL</span>
-                            <span class="pildora mysql">MySQL</span>
-                            <span class="pildora git">GITHUB</span>
+                            <span class="pildora" title="Evaluación de pruebas unitarias y lógica de código">Gray-Box
+                                Testing</span>
+                            <span class="pildora" title="Validaciones de punta a punta en Web y Mobile">Pruebas
+                                E2E</span>
+                            <span class="pildora" title="Consultas para gestión de backend y bases de datos">SQL</span>
+                            <span class="pildora"
+                                title="Gestión y seguimiento del ciclo de vida de defectos">Jira</span>
+                            <span class="pildora"
+                                title="Gobierno y control documental del proceso de pruebas">STLC</span>
+                            <span class="pildora"
+                                title="Trabajo colaborativo bajo marcos de trabajo ágiles">Scrum</span>
+                            <span class="pildora" title="Preparación y auditoría de datos en Staging/Dev">MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -85,22 +154,171 @@
             <div class="row g-0">
                 <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
                     <a href="https://www.apinterfaces.mx/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/apinterfaces.jpg" class="img-fluid rounded-start imagenEmpresa apinterfaces transition" alt="APInterfaces">
+                        <img src="img/apinterfaces.jpg"
+                            class="img-fluid rounded-start imagenEmpresa apinterfaces transition" alt="APInterfaces">
                     </a>
                 </div>
                 <div class="col-12 col-md-9">
                     <div class="card-body">
                         <h5 class="card-title">APInterfases | Tester</h5>
                         <p class="card-text"><small class="text-body-secondary">Mayo 2022 - Agosto 2023</small></p>
-                        <p class="card-text">
-                            <strong>Ciclo Completo de QA:</strong> Responsable de la planificación, ejecución y reporte detallado de pruebas para garantizar la estabilidad de los sistemas.
-                            <br>
-                            <strong>Control de Calidad:</strong> Identificación y seguimiento proactivo de defectos hasta su resolución, asegurando el cumplimiento de los estándares funcionales.
+                        <p class="card-text mb-2">
+                            <strong>Consultoría Externa QA:</strong> Ejecuté validaciones de calidad de software
+                            adaptadas a los flujos de negocio del cliente Coppel bajo un esquema de entregables de alta
+                            velocidad.
+                        </p>
+                        <p class="mb-3">
+                            <strong>Testing Basado en Código & Backend:</strong> Diseñé casos de prueba exploratorios
+                            fundamentados en la revisión de código/pruebas unitarias y realicé la preparación y
+                            validación de datos en backend.
                         </p>
                         <div class="pildoras-container">
-                            <span class="pildora php">PHP</span>
-                            <span class="pildora sql">SQL</span>
-                            <span class="pildora mysql">MySQL</span>
+                            <span class="pildora"
+                                title="Pruebas basadas en la revisión de código y pruebas unitarias">Gray-Box
+                                Testing</span>
+                            <span class="pildora" title="Preparación y validación de datos en capas de backend">Backend
+                                Testing</span>
+                            <span class="pildora"
+                                title="Consultas en base de datos para soporte de pruebas backend">SQL</span>
+                            <span class="pildora"
+                                title="Entorno de base de datos utilizado para la gestión de datos">MySQL</span>
+                            <span class="pildora"
+                                title="Validación de software y entregables ágiles para clientes externos">Consultoría
+                                QA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <!-- BOTÓN Y EXPERIENCIA OCULTA -->
+        <div class="text-center my-4 fade-in-section">
+            <button id="btn-toggle-exp" class="glow-on-hover" type="button">
+                <span id="btn-text">Ver más experiencia</span>
+                <span id="btn-icon" class="ms-1">▼</span>
+            </button>
+        </div>
+
+        <div id="extra-experience" class="extra-exp-wrapper">
+            <div class="card mb-3 fade-in-section mx-auto">
+                <div class="row g-0">
+                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
+                        <a href="https://www.coppel.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/coppel.avif" class="img-fluid rounded-start imagenEmpresa coppel transition"
+                                alt="Coppel">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">COPPEL | Analista de Soporte</h5>
+                            <p class="card-text"><small class="text-body-secondary">Diciembre 2020 - Mayo 2021</small>
+                            </p>
+                            <div class="card-text">
+                                <p class="mb-2">
+                                    <strong>Gestión de Incidencias Críticas:</strong> Resolución de incidencias técnicas
+                                    en
+                                    software y sistemas críticos, fortaleciendo el entendimiento de la experiencia de
+                                    usuario (UX).
+                                </p>
+                                <p class="mb-3">
+                                    <strong>Soporte & Infraestructura:</strong> Análisis operativo y soporte técnico
+                                    enfocado en la estabilidad de infraestructura básica y herramientas de trabajo.
+                                </p>
+                            </div>
+                            <div class="pildoras-container">
+                                <span class="pildora"
+                                    title="Diagnóstico y resolución de incidencias en software crítico">Soporte
+                                    Técnico</span>
+                                <span class="pildora"
+                                    title="Análisis de impacto técnico en la experiencia del usuario">Experiencia de
+                                    Usuario
+                                    (UX)</span>
+                                <span class="pildora"
+                                    title="Comprensión básica de sistemas y entornos operativos">Infraestructura
+                                    IT</span>
+                                <span class="pildora"
+                                    title="Atención y seguimiento de fallos operativos en sistemas">Gestión de
+                                    Incidencias</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN PROYECTOS DESTACADOS -->
+    <div id="proyectos">
+        <h1 class="fade-in-section">Proyectos</h1>
+        <div class="card mb-3 fade-in-section mx-auto">
+            <div class="row g-0">
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
+                    <!-- Ícono representativo de Automatización / Código -->
+                    <a href="https://github.com/EdgarChairez/SauceDemo-Selenium-Python-E2E/archive/refs/heads/main.zip"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="img/Saucedemo.png" class="img-fluid rounded-start imagenEmpresa saucedemo transition">
+                    </a>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">SauceDemo E2E Test Automation Framework</h5>
+                        <p class="card-text"><small class="text-body-secondary">Python & Selenium</small></p>
+                        <div class="card-text">
+                            <p class="mb-2">
+                                <strong>Arquitectura Modular:</strong> Diseñé e implementé desde cero un framework de
+                                automatización End-to-End modular bajo estándares PEP 8.
+                            </p>
+                            <p class="mb-3">
+                                <strong>Validaciones Financieras & JSON:</strong> Implementé validaciones dinámicas de
+                                interfaz vs. datos estructurados JSON y automaticé scripts de cálculo financiero
+                                (impuestos y checkout).
+                            </p>
+                        </div>
+                        <div class="pildoras-container">
+                            <span class="pildora" title="Lenguaje de programación principal">Python</span>
+                            <span class="pildora" title="Automatización Web con Selenium WebDriver">Selenium</span>
+                            <span class="pildora" title="Pruebas Automatizadas de Extremo a Extremo">E2E Testing</span>
+                            <span class="pildora" title="Validación y estructuración de datos">JSON</span>
+                            <span class="pildora" title="Estándares de calidad de código en Python">PEP 8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN HABILIDADES TÉCNICAS -->
+    <div id="habilidades">
+        <h1 class="fade-in-section">Habilidades</h1>
+        <div class="card mb-3 fade-in-section mx-auto">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Stack Técnico & Herramientas</h5>
+                        <div class="card-text">
+                            <p class="mb-2">
+                                <strong>Metodologías & Gestión:</strong> Scrum, Agile, STLC (Software Testing Life
+                                Cycle), SDLC, Jira, Confluence, Loom.
+                            </p>
+                            <p class="mb-2">
+                                <strong>QA & Automatización:</strong> Selenium WebDriver, Postman (APIs), Pruebas E2E,
+                                Gray-Box Testing, Regression Testing, Smoke Testing.
+                            </p>
+                            <p class="mb-2">
+                                <strong>Tecnologías de IA:</strong> AI-Driven Testing, Prompt Engineering (Google
+                                Gemini), Evaluación de Outputs de IA, Axet GAIA.
+                            </p>
+                            <p class="mb-2">
+                                <strong>Programación:</strong> Python, JavaScript, C#, PHP.
+                            </p>
+                            <p class="mb-2">
+                                <strong>Bases de Datos:</strong> SQL, MySQL, PostgreSQL (Consultas avanzadas, Joins,
+                                Subqueries).
+                            </p>
+                            <p class="mb-3">
+                                <strong>Desarrollo Web & Control de Versiones:</strong> HTML5, CSS3, Bootstrap, Git,
+                                GitHub.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -114,7 +332,8 @@
             <div class="row g-0">
                 <div class="col-12 col-md-3 d-flex align-items-center justify-content-center p-3">
                     <a href="https://www.itseldorado.edu.mx/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/tec.webp" class="img-fluid rounded-start imagenEmpresa" alt="Instituto Tecnologico Superior de ElDorado">
+                        <img src="img/tec.webp" class="img-fluid rounded-start imagenEmpresa"
+                            alt="Instituto Tecnologico Superior de ElDorado">
                     </a>
                     <i class="fas fa-graduation-cap" style="font-size: 3rem; color: #007bff;"></i>
                 </div>
@@ -124,13 +343,13 @@
                         <p class="card-text"><strong>Ingeniero en Sistemas Computacionales</strong></p>
                         <p class="card-text"><small class="text-body-secondary">Eldorado, Sinaloa</small></p>
                     </div>
-                        <span class="pildora html">HTML</span>
-                        <span class="pildora css">CSS</span>
-                        <span class="pildora js">JS</span>
-                        <span class="pildora php">PHP</span>
-                        <span class="pildora c#">C#</span>
-                        <span class="pildora sql">SQL</span>
-                        <span class="pildora mysql">MySQL</span>
+                    <span class="pildora html">HTML</span>
+                    <span class="pildora css">CSS</span>
+                    <span class="pildora js">JS</span>
+                    <span class="pildora php">PHP</span>
+                    <span class="pildora c#">C#</span>
+                    <span class="pildora sql">SQL</span>
+                    <span class="pildora mysql">MySQL</span>
                 </div>
             </div>
         </div>
@@ -141,20 +360,40 @@
         <p>Actualmente disponible para proyectos de Desarrollo Web y Consultoría QA.</p>
 
         <div class="contact-container">
-            <button onclick="copyEmail()" class="contact-link boton-mail d-inline-block" id="email-btn">Email</button>
-            <a href="https://drive.google.com/file/d/1rJZhEGt2EtcQsUhsVKQSVqKruBpd6rgC/view?usp=sharing" download="CV_Edgar_Chairez_S" class="contact-link cv-btn">
+            <div class="email-container">
+                <button popovertarget="email-popover" id="email-trigger" class="contact-link boton-mail">
+                    Email
+                </button>
+
+                <div popover id="email-popover">
+                    <div class="phone-number text-lowercase" id="email-text">chairezandres0@gmail.com</div>
+                    <button type="button" class="ws-button border-0 w-100" id="btn-copy-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-copy" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                        </svg>
+                        <span id="copy-text">COPIAR</span>
+                    </button>
+                </div>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1ZzhBVlc9YArCPEUyqvvWJBfpZ-j5K7bb/view?usp=sharing"
+                download="CV_Edgar_Chairez_S" class="contact-link cv-btn">
                 Descargar CV
             </a>
-            
+
             <button data-hint-target="contact-popover" id="contact-trigger" class="contact-link boton-mail">
-            WhatsApp
+                WhatsApp
             </button>
 
             <div popover id="contact-popover">
                 <div class="phone-number">6674018894</div>
                 <a href="https://wa.me/526674018894" target="_blank" class="ws-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                     </svg>
                     <i class="bi bi-whatsapp"></i> Contactar
                 </a>
@@ -173,6 +412,9 @@
         </div>
     </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 <script src="JS/main.js"></script>
+
 </html>

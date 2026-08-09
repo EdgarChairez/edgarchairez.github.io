@@ -14,20 +14,17 @@ body, .main {
     margin-right: auto !important;
 }
 
-/* Ajuste para pantallas extra pequeñas (menos de 400px) */
+/* Ajuste para pantallas extra pequeñas (menos de 767px) */
 @media (max-width: 767px) {
-    /* 1. Eliminamos la imagen por completo del flujo */
     .imagenPrincipal {
         display: none !important;
     }
 
-    /* 2. Forzamos a que el contenedor sea de una sola columna */
     .headline {
-        display: block !important; /* Cambiamos de grid a block */
+        display: block !important;
         width: 100vw;
     }
 
-    /* 3. Centramos el contenido de datos */
     .datos {
         width: 100% !important;
         padding: 0;
@@ -44,27 +41,19 @@ body, .main {
         width: 90%;
     }
 
-    .datos h1{
-        font-size: 10vh !important;
-    }
-    .datos h3{
-        font-size: 4.5vh !important;
-    }
-    #sobreMi h1 {
-        font-size: 6vh !important; 
-    }
-    #educacion h1 {
-        font-size: 6vh !important; 
-    }
-    #contacto h2 {
-        font-size: 3.5vh !important; 
-    }
+    .datos h1{ font-size: 10vh !important; }
+    .datos h3{ font-size: 4.5vh !important; }
+    #sobreMi h1 { font-size: 6vh !important; }
+    #educacion h1 { font-size: 6vh !important; }
+    #contacto h2 { font-size: 3.5vh !important; }
+    #proyectos h1 { font-size: 6vh !important; }
+    #habilidades h1 { font-size: 6vh !important; }
 }
 
 /* Ajuste de los títulos grandes para móvil */
 @media (max-width: 768px) {
-    #sobreMi h1, #educacion h1 {
-        font-size: 15vw; /* Tamaño dinámico basado en el ancho del celular */
+    #sobreMi h1, #educacion h1, #habilidades h1, #proyectos h1 {
+        font-size: 15vw;
         text-align: center;
         margin-top: 2rem;
     }
@@ -75,11 +64,11 @@ body, .main {
     }
 
     .imagenEmpresa {
-        max-width: 150px; /* Que el logo no sea gigante en el celular */
+        max-width: 150px;
     }
 }
 
-/* Contenedor de píldoras para que no se corten */
+/* Contenedor de píldoras */
 .card-body {
     display: flex;
     flex-direction: column;
@@ -87,34 +76,32 @@ body, .main {
 
 #pildoras-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que salten de línea si no caben */
-    gap: 8px; /* Espacio uniforme entre ellas */
-    justify-content: flex-start; /* Alineadas a la izquierda */
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
     margin-top: 10px;
 }
 
 @media (min-width: 768px) {
     #pildoras-container {
-        justify-content: flex-start; /* Alineadas a la izquierda en PC */
+        justify-content: flex-start;
     }
 }
 
-/* Solo para celulares (pantallas menores a 768px) */
 @media (max-width: 768px) {
     .datos h1 {
         font-size: 8vh; 
     }
 }
-/* --- RESPONSIVIDAD GENERAL --- */
 
-/* Ajuste para Tablets y Laptops pequeñas */
+/* --- RESPONSIVIDAD GENERAL --- */
 @media (max-width: 992px) {
     .headline {
-        grid-template-columns: 1fr; /* Apila el texto sobre la imagen */
+        grid-template-columns: 1fr;
     }
 
     .imagenPrincipal {
-        height: 40vh; /* La imagen no ocupa todo el alto en móvil */
+        height: 40vh;
         background-image: 
             linear-gradient(to bottom, rgba(0,0,0,1) 0%, transparent 30%),
             linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 30%), 
@@ -125,24 +112,23 @@ body, .main {
         padding: 40px 20px;
     }
 
-    #sobreMi h1, #educacion h1 {
+    #sobreMi h1, #educacion h1, #habilidades h1, #proyectos h1 {
         font-size: 8vh;
         text-align: center;
     }
 }
 
-/* Ajuste específico para Celulares */
 @media (max-width: 576px) {
     .datos h1 {
-        font-size: 12vw; /* Nombre fluido según el ancho del cel */
+        font-size: 12vw;
     }
 
     .card-body {
-        text-align: center; /* Centra el texto en móvil para mejor balance */
+        text-align: center;
     }
 
     .pildora {
-        display: inline-block; /* Evita que se estiren al 100% de la tarjeta */
+        display: inline-block;
         width: fit-content;
         font-size: 0.75rem;
         padding: 4px 10px;
@@ -155,57 +141,44 @@ body, .main {
     }
 
     .glow-on-hover, .contact-link {
-        width: 100%; /* Botones fáciles de tocar con el pulgar */
+        width: 100%;
         max-width: 280px;
     }
 
     [popover] {
-        width: 90%; /* El popover ocupa casi todo el ancho en móvil */
         min-width: auto;
     }
 }
 
-/* Mejora para que las imágenes de empresa no se deformen */
 .imagenEmpresa {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Mantiene un cuadrado perfecto, o usa 16/9 según prefieras */
-    object-fit: contain; /* Asegura que la imagen quepa sin estirarse */
-    background-color: transparent; /* Opcional: fondo para que no se vea vacío si la imagen es pequeña */
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: transparent;
 }
 
 @media (min-width: 768px) {
     .imagenEmpresa {
-        max-width: 100%; /* Tamaño completo en PC */
+        max-width: 100%;
     }
 }
 
-/* Asegura que el contenedor no fuerce a las píldoras a estirarse */
-#pildoras-container {
-    display: flex;
-    flex-wrap: wrap;       /* Permite que salten de línea */
-    gap: 8px;              /* Espacio uniforme entre ellas */
-    justify-content: flex-start; /* Alineadas a la izquierda */
-    margin-top: 15px;      /* Separación del texto superior */
-}
-
-/* Ajuste individual de la píldora */
 .pildora {
     display: inline-block;
-    width: fit-content;    /* Solo ocupan el ancho de su texto */
+    width: fit-content;
     padding: 5px 15px;
     border: 1px solid #cccccc;
     border-radius: 50px;
     font-size: 0.9rem;
     color: #444;
     background-color: transparent;
-    margin: 0;             /* El espacio lo da el 'gap' del contenedor */
+    margin: 0;
     transition: all 0.3s ease;
 }
 
-/* Centrado automático en celulares para todas las secciones */
 @media (max-width: 768px) {
     #pildoras-container {
-        justify-content: center; /* Se centran en móvil como en tu captura de Educación */
+        justify-content: center;
     }
 }
 
@@ -329,30 +302,6 @@ body, .main {
     border: none;
 }
 
-.imagenEmpresa{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilo de Píldoras (Versión Limpia) */
-.pildora {
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 5px;
-    text-decoration: none;
-    color: #444444; 
-    border: 1px solid #cccccc; 
-    background-color: transparent;
-    transition: all 0.4s ease;
-    margin-bottom: 8px;
-}
-
 .pildora:hover {
     background-color: rgba(0, 0, 0, 0.05);
     transform: translateY(-2px); 
@@ -360,14 +309,14 @@ body, .main {
     border-color: #000000;
 }
 
-#sobreMi h1, #educacion h1 {
+#sobreMi h1, #educacion h1, #habilidades h1, #proyectos h1 {
     font-family: "Chonburi", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 10vh;
 }
 
-#educacion{ margin: 5vh; }
+#educacion, #habilidades, #proyectos{ margin: 5vh; }
 .universidad{ align-content: center; }
 h1{ color: #ffffff; }
 
@@ -390,6 +339,12 @@ footer p { color: #bbb; margin-bottom: 30px; }
     margin-bottom: 40px;
     flex-wrap: wrap;
     align-content: center;
+}
+
+.email-container,
+.whatsapp-container {
+    display: inline-block;
+    position: relative;
 }
 
 .contact-link {
@@ -443,14 +398,12 @@ footer p { color: #bbb; margin-bottom: 30px; }
 .ntt:hover { content: url('../img/ntt2.png'); }
 .apinterfaces:hover { content: url("../img/apinterfaces2.jpg"); }
 .coppel:hover { content: url('../img/coppel2.jpg'); }
+.saucedemo:hover { content: url('../img/SauceDemo\ Descargar.png') }
 
-/* Popover Contacto */
-#contact-trigger { anchor-name: --contact-anchor; }
-
+/* --- POPOVER STYLE (BASE COMÚN) --- */
 [popover] {
-  position-anchor: --contact-anchor;
-  position-area: top span-all;
-  position-try-fallbacks: flip-block;
+  inset: auto;
+  margin: 0;
   margin-bottom: 10px;
   border: 1px solid #000;
   background: #fff;
@@ -466,6 +419,29 @@ footer p { color: #bbb; margin-bottom: 30px; }
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* ANCLAJES INDIVIDUALES PARA EMAIL Y WHATSAPP */
+#email-trigger {
+    anchor-name: --email-btn;
+}
+
+#email-popover {
+    position-anchor: --email-btn;
+    bottom: anchor(top);
+    left: anchor(center);
+    transform: translateX(-50%);
+}
+
+#contact-trigger {
+    anchor-name: --whatsapp-btn;
+}
+
+#contact-popover {
+    position-anchor: --whatsapp-btn;
+    bottom: anchor(top);
+    left: anchor(center);
+    transform: translateX(-50%);
 }
 
 .ws-button {
@@ -509,8 +485,6 @@ body::after {
 }
 
 /* --- EFECTO FADE-IN AL SCROLL --- */
-
-/* Estado inicial: oculto y un poco más abajo */
 .fade-in-section {
     opacity: 0;
     transform: translateY(30px);
@@ -518,9 +492,58 @@ body::after {
     visibility: hidden;
 }
 
-/* Estado cuando la sección entra en el campo de visión */
 .fade-in-section.is-visible {
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
+}
+
+/* Contenedor con transición de desvanecido */
+.extra-exp-wrapper {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-15px);
+    transition: max-height 0.6s cubic-bezier(0, 1, 0, 1), 
+                opacity 0.5s ease-in-out, 
+                transform 0.5s ease-in-out;
+}
+
+.extra-exp-wrapper.show-extra {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: max-height 0.6s cubic-bezier(1, 0, 1, 0), 
+                opacity 0.5s ease-in-out, 
+                transform 0.5s ease-in-out;
+}
+
+/* --- CORRECCIÓN DE POSICIONAMIENTO Y ANIMACIÓN DE POPOVERS --- */
+
+[popover] {
+  inset: auto;
+  margin: 0 0 10px 0;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  min-width: 180px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Se conserva translateX(-50%) en todos los fotogramas para mantener el centro */
+@keyframes fade-in {
+  from { 
+    opacity: 0; 
+    transform: translateX(-50%) translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(-50%) translateY(0); 
+  }
+}
+
+[popover]:popover-open { 
+  animation: fade-in 0.25s ease-out forwards; 
 }
